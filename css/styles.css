@@ -35,11 +35,10 @@ body {
 }
 
  .container {
-    width: 1470px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
 }   
 
 .list {
@@ -73,7 +72,7 @@ body {
  
 .header {
     background-color: var(--main-background-color);
-    padding-top: 26px;
+    padding-top: 24px;
 }
 
 .header-container {
@@ -89,7 +88,6 @@ body {
 }
 
 .header-logo {
-    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -99,23 +97,11 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-color); 
-    margin-left: 156px;
+    margin-right: 76px;
 }
 
 .header-logostudio {
-    font-family: 'Raleway' sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: var(--logo-color);
-    width: 71px;
-    height: 21px;
-    margin-right: 76px;
 }
 
 .list-header{
@@ -154,7 +140,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    margin-right: 40px;
+    
 }
 
 .contact-link:hover {
@@ -190,6 +176,7 @@ body {
 .hero-btn {
     min-width: 169px;
     height: 56px;
+    border-color: transparent;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -224,7 +211,6 @@ body {
     display: flex;
     gap: 24px;
     align-items: center;
-    padding: 156px;
 }
 
 .about-item {    
@@ -236,6 +222,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--logo-color);
+    margin-bottom: 8px;
 }
 
 .about-text {
@@ -251,6 +238,7 @@ body {
 /**_______________PRODUCTS_______________**/
 
 .products {
+    padding-top: 0;
 }
 
 .products-title {
@@ -261,13 +249,13 @@ body {
     text-transform: capitalize;
     text-align: center;
     color: var(--logo-color);
+    margin-bottom: 72px;
 }
 
 .products-list {
     display: flex;
     gap: 24px;
     align-items: center;
-    padding: 156px;
 }
 
 .products-item {}
@@ -276,13 +264,13 @@ body {
 
 .team {
     background-color: var(--light-color);
+    padding-top: 0;
 }
 
 .team-list {
     display: flex;
     gap: 24px;
     align-items: center;
-    padding: 156px;
 }
 
 .team-title {
@@ -293,11 +281,19 @@ body {
     text-transform: capitalize;
     text-align: center;
     color: var(--logo-color);
+    margin-bottom: 72px;
 }
 
 .team-item {
     background-color: var(--main-background-color);
     width: calc((100% - 60px) / 2);
+}
+
+.team-card {
+    padding-top: 32px;
+    padding-bottom: 8px;
+    text-align: center;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .team-subtitle {
@@ -306,6 +302,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--logo-color);
+    text-align: center;
 }
 
 .team-text { 
@@ -314,6 +311,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    text-align: center;
 }
 
 /**_______________FOOTER_______________**/
@@ -331,7 +329,6 @@ body {
     letter-spacing: 0.02em;
     color: var(--light-color);
     width: 264px; 
-    margin-left: 156px;
 }
 
 .footer-logo {
@@ -345,52 +342,54 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-color);
-    margin-left: 156px;
+    margin-bottom: 18px;
 }
 
 .footer-logostudio {
-    width: 71px;
-    height: 21px;
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: var(--light-color);
 }
 
 /**_______________GALLERY_______________**/
 
-.gallery {}
+.gallery {
+    padding-bottom: 120px;
+}
 
-.hidden-text {}
 
 .filter-list-gallery {
     display: flex;
-    gap: 72px;
+    gap: 24px;
+    justify-content: center;
     align-items: center;
-    margin-left: 427px;
-    padding: 12px 24px;
-    height: 48px;
 }
 
-.filter-gallery-item {}
+.filter-gallery-item {
+    padding-bottom: 72px;
+    
+}
+
+.gallery-card {
+    border-bottom: 1px solid #E7E9FC; 
+    border-right: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
 
 .filter-btn-text {
+    border-color: transparent;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     color: var(--second-color);
     background-color: var(--light-color);
-    cursor: pointer;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    padding: 12px 24px;
 }
 
 .filter-btn-text:hover,
@@ -404,7 +403,6 @@ body {
     flex-wrap: wrap;
     gap: 48px 24px;
     align-items: center;
-    padding: 156px;
     justify-content: center;
 }
 
