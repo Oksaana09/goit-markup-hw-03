@@ -333,6 +333,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--light-color);
     width: 264px; 
+    margin-top: 18px;
 }
 
 .footer-logo {
@@ -344,7 +345,6 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-color);
-    margin-bottom: 16px;
 }
 
 .footer-logostudio {
@@ -365,7 +365,7 @@ body {
     gap: 24px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .filter-gallery-item {   
